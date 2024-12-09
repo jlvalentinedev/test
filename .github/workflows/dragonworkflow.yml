@@ -11,7 +11,12 @@ jobs:
       run: ls -ltra
 
 
+    - name: Change permissions
+      run: chmod +x ./ascii.sh
+
     - name: Execute Shell Script
       run: ./ascii.sh
+
+
 
    
