@@ -5,7 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name : checkout repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4 
+      
+    - name: List Repo Files
+      run: ls ltra
 
-    - name: install cowsay program
-      run: sudo apt-get install cowsay -y && cowsay -f dragon “Run for cover, I am a DRAGON..RAWR” >> dragon.txt
+
+    - name : Execute Shell Script
+      uses: ./ascii.sh
+
+   
